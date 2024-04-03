@@ -36,8 +36,8 @@ classDiagram
         -String icon
         -String description
     }
-    User o-- Account
-    User o-- Feature
-    User o-- Card
-    User o-- News
+    User "1" o--"1" Account
+    User "1" o--"N" Feature
+    User "1" o--"1" Card
+    User "1" o--"N" News
 ```
