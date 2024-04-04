@@ -7,7 +7,7 @@ A API foi construída em Java 17 utilizando o framework Spring Boot 3, aproveita
 ## Principais Tecnologias
 
 
-- **Java 17**: Utilizamos a **versão LTS** mais recente do Java para aproveitar as inovações e melhorias da linguagem.
+- **Java 17**: Utilizado a **versão LTS** mais recente do Java para aproveitar as inovações e melhorias da linguagem.
 
 
 - **Spring Boot 3**:  O **framework Spring Boot** oferece produtividade e facilidade de configuração, permitindo focar no desenvolvimento das funcionalidades da API.
@@ -22,14 +22,14 @@ A API foi construída em Java 17 utilizando o framework Spring Boot 3, aproveita
 - **Railway**: facilita o deploy e monitoramento de nossas soluções na nuvem, além de oferecer diversos bancos de dados como serviço e pipelines de CI/CD.
 
 ## Recursos Adicionais
-**Figma**: Utilizamos o Figma para abstrair o domínio da API, auxiliando na análise e no projeto da solução.
+**Figma**:Foi utilizado o Figma para abstrair o domínio da API, auxiliando na análise e no projeto da solução.
 
 ### [Link do Figma](https://www.figma.com/file/0ZsjwjsYlYd3timxqMWlbj/SANTANDER---Projeto-Web%2FMobile?type=design&node-id=1421%3A432&mode=design&t=6dPQuerScEQH0zAn-1)
 
 
 
 ## Diagrama de Classes (Domínio da API)
-Fornecemos um diagrama de classes que representa o domínio da API, facilitando a compreensão da estrutura do sistema.
+Ilustração de um diagrama de classes que representa o domínio da API, facilitando a compreensão da estrutura do sistema.
 
 ```mermaid
 classDiagram
