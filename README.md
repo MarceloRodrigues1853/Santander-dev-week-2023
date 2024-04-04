@@ -5,9 +5,10 @@ Este repositório contém o código-fonte da RESTful API desenvolvida para o des
 A API foi construída em Java 17 utilizando o framework Spring Boot 3, aproveitando as tecnologias mais recentes para proporcionar uma experiência de desenvolvimento eficiente e moderna.
 
 ## Principais Tecnologias
+- **IDE**: Itellij
 
 
-- **Java 17**: Utilizado a **versão LTS** mais recente do Java para aproveitar as inovações e melhorias da linguagem.
+- **Java 17**: Utilizado esta **versão LTS** pois ela foi utilizada nos exemplos vídeo aula fornecidos pra constução do Projeto.
 
 
 - **Spring Boot 3**:  O **framework Spring Boot** oferece produtividade e facilidade de configuração, permitindo focar no desenvolvimento das funcionalidades da API.
