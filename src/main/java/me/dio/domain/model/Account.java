@@ -1,5 +1,6 @@
 package me.dio.domain.model;
 
+// Importações necessárias para definição da entidade JPA
 import java.math.BigDecimal;
 
 import jakarta.persistence.Column;
@@ -8,24 +9,31 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+// Definição da entidade Account que será mapeada para a tabela tb_account no banco de dados
 @Entity(name = "tb_account")
 public class Account {
 
+    // Identificador único da conta, gerado automaticamente pelo banco de dados
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    // Número da conta, único e não nulo
     @Column(unique = true)
     private String number;
 
+    // Agência da conta
     private String agency;
 
+    // Saldo da conta, com precisão de 13 dígitos e escala de 2 casas decimais
     @Column(precision = 13, scale = 2)
     private BigDecimal balance;
 
+    // Limite adicional da conta, com precisão de 13 dígitos e escala de 2 casas decimais
     @Column(name = "additional_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
+    // Métodos getters e setters para acessar e modificar os atributos da entidade
     public Long getId() {
         return id;
     }

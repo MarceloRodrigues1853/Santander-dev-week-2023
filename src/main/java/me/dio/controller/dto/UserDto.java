@@ -8,6 +8,7 @@ import static java.util.Collections.emptyList;
 import static java.util.Optional.ofNullable;
 import static java.util.stream.Collectors.toList;
 
+// DTO para representar os dados de um usuário
 public record UserDto(
         Long id,
         String name,
@@ -16,6 +17,7 @@ public record UserDto(
         List<FeatureDto> features,
         List<NewsDto> news) {
 
+    // Construtor que recebe um modelo de usuário e converte para DTO
     public UserDto(User model) {
         this(
                 model.getId(),
@@ -27,6 +29,7 @@ public record UserDto(
         );
     }
 
+    // Método para converter DTO de volta para o modelo de usuário
     public User toModel() {
         User model = new User();
         model.setId(this.id);

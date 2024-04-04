@@ -14,12 +14,14 @@ import java.net.URI;
 import java.util.List;
 import java.util.stream.Collectors;
 
+// Controlador para gerenciamento de usuários
 @CrossOrigin
 @RestController
 @RequestMapping("/users")
 @Tag(name = "Users Controller", description = "RESTful API for managing users.")
 public record UserController(UserService userService) {
 
+    // Endpoint para buscar todos os usuários
     @GetMapping
     @Operation(summary = "Get all users", description = "Retrieve a list of all registered users")
     @ApiResponses(value = {
@@ -31,6 +33,7 @@ public record UserController(UserService userService) {
         return ResponseEntity.ok(usersDto);
     }
 
+    // Endpoint para buscar um usuário por ID
     @GetMapping("/{id}")
     @Operation(summary = "Get a user by ID", description = "Retrieve a specific user based on its ID")
     @ApiResponses(value = {
@@ -42,6 +45,7 @@ public record UserController(UserService userService) {
         return ResponseEntity.ok(new UserDto(user));
     }
 
+    // Endpoint para criar um novo usuário
     @PostMapping
     @Operation(summary = "Create a new user", description = "Create a new user and return the created user's data")
     @ApiResponses(value = {
@@ -57,6 +61,7 @@ public record UserController(UserService userService) {
         return ResponseEntity.created(location).body(new UserDto(user));
     }
 
+    // Endpoint para atualizar um usuário existente
     @PutMapping("/{id}")
     @Operation(summary = "Update a user", description = "Update the data of an existing user based on its ID")
     @ApiResponses(value = {
@@ -69,6 +74,7 @@ public record UserController(UserService userService) {
         return ResponseEntity.ok(new UserDto(user));
     }
 
+    // Endpoint para deletar um usuário existente
     @DeleteMapping("/{id}")
     @Operation(summary = "Delete a user", description = "Delete an existing user based on its ID")
     @ApiResponses(value = {

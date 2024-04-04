@@ -1,11 +1,10 @@
 # Santander Dev Week 2023 Java API
+Este repositório contém o código-fonte da RESTful API desenvolvida para o desafio do projeto Lab Santander Week 2023 em parceria com a DIO.me, com o objetivo de promover estudos e aprendizado.
 
-
-
-RESTful API da Santander Dev Week 2023 construída em Java 17 com Spring Boot 3.
+## Visão Geral
+A API foi construída em Java 17 utilizando o framework Spring Boot 3, aproveitando as tecnologias mais recentes para proporcionar uma experiência de desenvolvimento eficiente e moderna.
 
 ## Principais Tecnologias
-
 
 
 - **Java 17**: Utilizaremos a versão LTS mais recente do Java para tirar vantagem das últimas inovações que essa linguagem robusta e amplamente utilizada oferece;
@@ -22,13 +21,15 @@ RESTful API da Santander Dev Week 2023 construída em Java 17 com Spring Boot 3.
 
 - **Railway**: facilita o deploy e monitoramento de nossas soluções na nuvem, além de oferecer diversos bancos de dados como serviço e pipelines de CI/CD.
 
-## [Link do Figma](https://www.figma.com/file/0ZsjwjsYlYd3timxqMWlbj/SANTANDER---Projeto-Web%2FMobile?type=design&node-id=1421%3A432&mode=design&t=6dPQuerScEQH0zAn-1)
+## Recursos Adicionais
+**Figma**: Utilizamos o Figma para abstrair o domínio da API, auxiliando na análise e no projeto da solução.
+
+### [Link do Figma](https://www.figma.com/file/0ZsjwjsYlYd3timxqMWlbj/SANTANDER---Projeto-Web%2FMobile?type=design&node-id=1421%3A432&mode=design&t=6dPQuerScEQH0zAn-1)
 
 
-
-O Figma foi utilizado para a abstração do domínio desta API, sendo útil na análise e projeto da solução.
 
 ## Diagrama de Classes (Domínio da API)
+Fornecemos um diagrama de classes que representa o domínio da API, facilitando a compreensão da estrutura do sistema.
 
 ```mermaid
 classDiagram
@@ -68,26 +69,20 @@ classDiagram
   User "1" *-- "N" News
 ```
 
-## Documentação da API (Swagger)
+## Documentação da API
+A documentação da API está disponível através do Swagger, onde é possível visualizar todos os endpoints, seus parâmetros e respostas.
+
+### [Documentação da API (Swagger)](https://sdw-2023-prd.up.railway.app/swagger-ui.html)
 
 
 
-### https://sdw-2023-prd.up.railway.app/swagger-ui.html
+
+## Links de aramzenamento
+
+- **URL de Produção**: [Railway](https://sdw-2023-production-mr180886.up.railway.app)
 
 
-
-Esta API ficará disponível no Railway por um período de tempo limitado, mas este é um código-fonte 
-aberto. Portanto, sintam-se à vontade para cloná-lo, modificá-lo (já que é um bom projeto base para 
-novos projetos) e executar localmente ou onde achar mais interessante!
+- **Contolador de Usuários**: [Swagger](https://sdw-2023-production-mr180886.up.railway.app/swagger-ui/index.html#/Users%20Controller/delete)
 
 
-### IMPORTANTE
-
-
-
-Aos interessados no desenvolvimento da tela inicial do App do Santander (Figma) em Angular, Android, iOS ou Flutter... Caso a URL produtiva não esteja mais disponível, deixamos um Backup no GitHub Pages, é só dar um GET lá.
-
-- URL de Produção: https://sdw-2023-prd.up.railway.app/users/1
-
-
-- Mock (Backup): https://digitalinnovationone.github.io/santander-dev-week-2023-api/mocks/find_one.json
+Este repositório é destinado principalmente para fins de estudo e aprendizado, mas também pode ser utilizado como um ponto de partida para projetos futuros. Sinta-se à vontade para explorar, clonar e modificar o código conforme necessário.
